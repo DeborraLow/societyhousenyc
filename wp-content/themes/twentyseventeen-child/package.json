@@ -1,0 +1,20 @@
+{
+  "name": "wpsass",
+  "version": "1.0.0",
+  "description": "Use Sass with WordPress, Node Script in SCSS",
+  "scripts": {
+    "css": "node-sass --output-style --include-path scss scss/main.scss style.css",
+    "watch": "nodemon -e scss -x \"npm run css\""
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Regulo Leonardi",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4"
+  }
+}

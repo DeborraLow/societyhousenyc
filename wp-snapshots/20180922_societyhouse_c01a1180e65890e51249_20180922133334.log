@@ -1,0 +1,79 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 22 September, 2018 1:33 pm
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.46
+WORDPRESS:	4.9.8
+PHP INFO:	7.2.8 | SAPI: apache2handler
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (128M default) 
+MEMORY STACK: 6MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:13 | filtered:0 | create:13 
+FILTERED: [] 
+SQL CREATED: 20180922_societyhouse_c01a1180e65890e51249_20180922133334_database.sql 
+SQL FILE SIZE: 87.65KB (89757) 
+SQL FILE TIME: 2018-09-22 13:33:40 
+SQL RUNTIME: 0.07 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /Applications/MAMP/htdocs/societyhousenyc 
+ARCHIVE FILE: 20180922_societyhouse_c01a1180e65890e51249_20180922133334_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	58.3MB 
+STATS:	Dirs 1,090 | Files 6,683 
+SQL ADDED: 20180922_societyhouse_c01a1180e65890e51249_20180922133334_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 7773
+    [filename] => /Applications/MAMP/htdocs/societyhousenyc/wp-snapshots/tmp/20180922_societyhouse_c01a1180e65890e51249_20180922133334_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 20.91MB 
+ARCHIVE RUNTIME: 8.85 sec. 
+MEMORY STACK: 8MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preparing for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [/Applications/MAMP/htdocs/societyhousenyc/wp-snapshots/tmp/20180922_societyhouse_c01a1180e65890e51249_20180922133334_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 87.65KB 
+Installer File: 474.45KB 
+Archive File: 20.91MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 10.96 sec.
+PEAK PHP MEMORY USED: 8MB
+DONE PROCESSING => 20180922_societyhouse 22 September, 2018 1:33 pm
+ 
