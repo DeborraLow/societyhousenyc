@@ -10,16 +10,25 @@
 */
 
 @import "_config/main";
-@import "_functions/main";
+@import "_tools/main";
 
 
-.c-form{
+.c-form {
 
-  label{
+  label {
     color: $config-color__brand-primary;
 
-    @include t-mq($from: $config-breakpoint--md){
+    @include t-mq($from: $config-breakpoint--sm) {
       color: $config-color__brand-secondary;
+    }
+    @include t-mq($from: $config-breakpoint--md) {
+      color: $config-color__brand-primary;
+    }
+    @include t-mq($from: $config-breakpoint--lg) {
+      color: $config-color__brand-secondary;
+    }
+    @include t-mq($from: $config-breakpoint--xl) {
+      color: $config-color__brand-primary;
     }
   }
 }
