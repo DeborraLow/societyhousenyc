@@ -3,15 +3,12 @@
  Description:  Betheme Child Theme
  Author:       Regulo Leonardi
  Template:     betheme
- Version:      1.0.0
+ Version:      1.0.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  betheme
 */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
-h1 {
-  color: red; }
-
 .c-form label {
   color: #E8560F; }
   @media (min-width: 600px) {
@@ -26,3 +23,6 @@ h1 {
   @media (min-width: 1367px) {
     .c-form label {
       color: #E8560F; } }
+
+h2 {
+  color: #E8560F; }
