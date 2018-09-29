@@ -26,3 +26,7 @@
 
 h2 {
   color: #E8560F; }
+
+#mwd-form1 select {
+  background: #FFFFF2 url(http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/icons/down_arrow/group-copy-2) no-repeat 96% 50% !important;
+  background-size: 8% 32%; }

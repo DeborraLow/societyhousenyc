@@ -31,8 +31,17 @@
       color: $config-color__brand-primary;
     }
   }
+}
 
 h2 {
 	color: $config-color__brand-primary;
+}
+
+#mwd-form1 {
+  select{
+    background: #FFFFF2 url(http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/icons/down_arrow/group-copy-2) no-repeat 96% 50% !important;
+    background-size: 8% 32%;
+	
+  }
 }
 
