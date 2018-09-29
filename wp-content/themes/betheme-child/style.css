@@ -3,7 +3,7 @@
  Description:  Betheme Child Theme
  Author:       Regulo Leonardi
  Template:     betheme
- Version:      1.0.0
+ Version:      1.0.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  betheme
@@ -23,3 +23,6 @@
   @media (min-width: 1367px) {
     .c-form label {
       color: #E8560F; } }
+
+h2 {
+  color: #E8560F; }
