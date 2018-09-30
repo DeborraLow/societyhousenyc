@@ -24,9 +24,78 @@
     .c-form label {
       color: #E8560F; } }
 
-h2 {
-  color: #E8560F; }
+/*---------- Class Extends----------*/
+.hide_label .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(2) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(3) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(4) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(5) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(6) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(7) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(8) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(9) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(12) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(13) .wdform-label {
+  display: none; }
 
-#mwd-form1 select {
-  background: #FFFFF2 url(http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/icons/down_arrow/group-copy-2) no-repeat 96% 50% !important;
-  background-size: 8% 32%; }
+/* ---------- Form Edits ---------- */
+#mwd-form1 {
+  /* ---------- form field layout ---------- */ }
+  #mwd-form1 h3 {
+    /* Form Titles */
+    color: #885f5e; }
+  #mwd-form1 .input_active {
+    color: red; }
+  #mwd-form1 .wdform-required {
+    display: none; }
+  #mwd-form1 .wdform_column {
+    display: grid;
+    width: 500px;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-areas: "title title" "r1c1 r1c2" "r2sc r2sc" "r3sc r3sc" "r4sc r4sc" "r5sc r5sc" "r6c1 r6c2" "r7sc r7sc" "title2 title2" "r8sc r8sc" "r9sc r9sc" "r10sc r10sc" "r11sc r11sc" "r12sc r12sc" "submit submit"; }
+  #mwd-form1 select {
+    background: #FFFFFF url(http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/icons/down_arrow/group-copy-2.png) no-repeat 96% 50% !important;
+    background-size: 8% 32% !important; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(1) {
+    margin-top: -150px;
+    grid-area: title;
+    justify-self: center;
+    align-self: center; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(2) {
+    /* First Name */
+    grid-area: r1c1; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(3) {
+    grid-area: r1c2; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(4) {
+    grid-area: r2sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(5) {
+    grid-area: r3sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(6) {
+    grid-area: r4sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(7) {
+    grid-area: r5sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(8) {
+    grid-area: r6c1; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(9) {
+    grid-area: r6c2; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(10) {
+    grid-area: r7sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(11) {
+    /* Residence Title */
+    margin-top: 50px;
+    grid-area: title2;
+    justify-self: center;
+    align-self: center; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(12) {
+    grid-area: r8sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(13) {
+    grid-area: r9sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(14) {
+    grid-area: r10sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(15) {
+    grid-area: r11sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(16) {
+    grid-area: r12sc; }
+  #mwd-form1 .ui-sortable-handle:nth-of-type(17) {
+    /* Submit Button */
+    grid-area: submit;
+    justify-self: center;
+    align-self: center; }
+
+/**/
+.register_logo {
+  margin-top: 142px;
+  margin-bottom: 30px;
+  width: 670px; }
