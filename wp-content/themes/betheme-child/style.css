@@ -24,13 +24,18 @@
     .c-form label {
       color: #E8560F; } }
 
-/*---------- Class Extends----------*/
+/*-- Class Extends --*/
 .hide_label .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(2) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(3) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(4) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(5) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(6) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(7) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(8) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(9) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(12) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(13) .wdform-label {
   display: none; }
 
-/* ---------- Form Edits ---------- */
+/* ---------------------------------------- PAGE Landing */
+.land_radial_logo {
+  width: 200px; }
+
+/* ---------------------------------------- PAGE Register */
+/* ---------------------------------------- Form */
 #mwd-form1 {
-  /* ---------- form field layout ---------- */ }
+  /* ---------------------------------------- Form Field Layout Grid */ }
   #mwd-form1 h3 {
     /* Form Titles */
     color: #885f5e; }
@@ -94,8 +99,8 @@
     justify-self: center;
     align-self: center; }
 
-/**/
 .register_logo {
+  /*Society House Wordmark Brown*/
   margin-top: 142px;
   margin-bottom: 30px;
   width: 670px; }
