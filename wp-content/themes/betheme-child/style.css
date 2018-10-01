@@ -29,8 +29,39 @@
   display: none; }
 
 /* ---------------------------------------- PAGE Landing */
+#Top_bar {
+  /* No Main Menu */
+  display: none !important; }
+
+div[style] {
+  /* Override In-line Style */
+  padding-top: 0 !important; }
+
+.mcb-section-inner {
+  padding-top: -300px !important; }
+
 .land_radial_logo {
+  margin-top: 20px;
   width: 200px; }
+
+.btn__border--white {
+  background-color: transparent;
+  border: 1px solid white;
+  margin: 0 auto;
+  width: 207px !important;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: none !important; }
+  .btn__border--white p {
+    margin: 0;
+    line-height: normal; }
+  .btn__border--white a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 24px; }
 
 /* ---------------------------------------- PAGE Register */
 /* ---------------------------------------- Form */
@@ -101,6 +132,5 @@
 
 .register_logo {
   /*Society House Wordmark Brown*/
-  margin-top: 142px;
   margin-bottom: 30px;
   width: 670px; }
