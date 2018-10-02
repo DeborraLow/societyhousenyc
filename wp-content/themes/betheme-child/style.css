@@ -9,6 +9,7 @@
  Text Domain:  betheme
 */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
+/* Media Query Vars */
 .c-form label {
   color: #E8560F; }
   @media (min-width: 600px) {
@@ -24,35 +25,66 @@
     .c-form label {
       color: #E8560F; } }
 
+/* Media Query Mixins */
 /*-- Class Extends --*/
-.hide_label .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(2) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(3) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(4) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(5) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(6) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(7) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(8) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(9) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(12) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(13) .wdform-label {
+.hide_label .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(2) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(3) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(4) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(5) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(6) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(7) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(8) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(9) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(10) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(12) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(13) .wdform-label {
   display: none; }
+
+.form_field_lines_width--2col div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(3) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(9) div[style] {
+  width: 100% !important; }
+
+.form_field_lines_width--sc div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(4) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(5) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(6) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(7) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(16) div[style] {
+  width: 500px !important; }
+  @media (max-width: 768px) {
+    .form_field_lines_width--sc div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(4) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(5) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(6) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(7) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(16) div[style] {
+      width: 440px !important; } }
+
+.form_field_lines_width--dropdownsc div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(10) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(12) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(13) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(15) div[style] {
+  width: 490px !important; }
+  @media (max-width: 768px) {
+    .form_field_lines_width--dropdownsc div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(10) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(12) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(13) div[style], #mwd-form1 .ui-sortable-handle:nth-of-type(15) div[style] {
+      width: 440px !important; } }
 
 /* ---------------------------------------- PAGE Landing */
 #Top_bar {
   /* No Main Menu */
   display: none !important; }
 
-div[style] {
+.page-id-50 div[style] {
+  /* Override In-line Style */
+  padding-top: 0 !important; }
+
+.page-id-82 div[style] {
   /* Override In-line Style */
   padding-top: 0 !important; }
 
 .mcb-section-inner {
   padding-top: -300px !important; }
 
+.radial_logo_flex_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  @media (max-width: 600px) {
+    .radial_logo_flex_container {
+      justify-content: center; } }
+
 .land_radial_logo {
   margin-top: 20px;
   width: 200px; }
 
-.btn__border--white {
-  background-color: transparent;
-  border: 1px solid white;
-  margin: 0 auto;
-  width: 207px !important;
-  height: 50px;
+.container_btn__border--white {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; }
+
+.btn__border--white {
+  background-color: transparent;
+  height: 50px;
   float: none !important; }
   .btn__border--white p {
     margin: 0;
@@ -61,7 +93,9 @@ div[style] {
     text-decoration: none;
     color: white;
     letter-spacing: 5px;
-    font-size: 24px; }
+    font-size: 24px;
+    border: 1px solid white;
+    padding: 5px 20px; }
 
 /* ---------------------------------------- PAGE Register */
 /* ---------------------------------------- Form */
@@ -76,11 +110,15 @@ div[style] {
     display: none; }
   #mwd-form1 .wdform_column {
     display: grid;
-    width: 500px;
     height: 100vh;
+    box-sizing: content-box;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(15, 1fr);
+    grid-row-gap: 5px;
     grid-template-areas: "title title" "r1c1 r1c2" "r2sc r2sc" "r3sc r3sc" "r4sc r4sc" "r5sc r5sc" "r6c1 r6c2" "r7sc r7sc" "title2 title2" "r8sc r8sc" "r9sc r9sc" "r10sc r10sc" "r11sc r11sc" "r12sc r12sc" "submit submit"; }
+    @media (min-width: 768px) {
+      #mwd-form1 .wdform_column {
+        width: 500px !important; } }
   #mwd-form1 select {
     background: #FFFFFF url(http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/icons/down_arrow/group-copy-2.png) no-repeat 96% 50% !important;
     background-size: 8% 32% !important; }
@@ -88,26 +126,38 @@ div[style] {
     margin-top: -150px;
     grid-area: title;
     justify-self: center;
-    align-self: center; }
+    align-self: center;
+    display: none; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(2) {
     /* First Name */
     grid-area: r1c1; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(3) {
+    /* Last Name */
     grid-area: r1c2; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(4) {
+    /* E-mail */
     grid-area: r2sc; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(5) {
+    /* Phone */
     grid-area: r3sc; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(6) {
+    /* Address */
     grid-area: r4sc; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(7) {
+    /* Apartment */
     grid-area: r5sc; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(8) {
+    /* City */
     grid-area: r6c1; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(9) {
+    /* Postal Code */
     grid-area: r6c2; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(10) {
+    /* Country */
     grid-area: r7sc; }
+    #mwd-form1 .ui-sortable-handle:nth-of-type(10) #wdform_26_element1 {
+      /* Drop Down Arrow Proportion */
+      background-size: 4% 32% !important; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(11) {
     /* Residence Title */
     margin-top: 50px;
@@ -115,20 +165,43 @@ div[style] {
     justify-self: center;
     align-self: center; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(12) {
+    /* Residence Type */
     grid-area: r8sc; }
+    #mwd-form1 .ui-sortable-handle:nth-of-type(12) #wdform_12_element1 {
+      /* Drop Down Arrow Proportion */
+      background-size: 4% 32% !important; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(13) {
+    /* Price Range */
     grid-area: r9sc; }
+    #mwd-form1 .ui-sortable-handle:nth-of-type(13) #wdform_13_element1 {
+      /* Drop Down Arrow Proportion */
+      background-size: 4% 32% !important; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(14) {
-    grid-area: r10sc; }
+    /* Broker */
+    grid-area: r10sc;
+    margin: 20px 0 15px 0; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(15) {
+    /* How did you hear about us */
     grid-area: r11sc; }
+    #mwd-form1 .ui-sortable-handle:nth-of-type(15) #wdform_25_element1 {
+      /* Drop Down Arrow Proportion */
+      background-size: 4% 32% !important; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(16) {
+    /* Comment Box */
     grid-area: r12sc; }
+    #mwd-form1 .ui-sortable-handle:nth-of-type(16) #wdform_16_element1 {
+      width: 100%;
+      height: 200px;
+      box-sizing: border-box; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(17) {
     /* Submit Button */
     grid-area: submit;
     justify-self: center;
     align-self: center; }
+    #mwd-form1 .ui-sortable-handle:nth-of-type(17) button {
+      margin-right: 0 !important; }
+    #mwd-form1 .ui-sortable-handle:nth-of-type(17) .wdform-element-section {
+      min-width: auto; }
 
 .register_logo {
   /*Society House Wordmark Brown*/

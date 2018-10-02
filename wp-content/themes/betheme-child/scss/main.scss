@@ -12,6 +12,12 @@
 @import "_config/main.scss";
 @import "_tools/main.scss";
 
+/* Media Query Vars */
+$mq_breakpoint--xs:	400px;
+$mq_breakpoint--sm:	600px;
+$mq_breakpoint--md: 769px;
+$mq_breakpoint--lg: 1025px;
+$mq_breakpoint--xl: 1367px;
 
 .c-form {
 
@@ -33,6 +39,20 @@
   }
 }
 
+/* Media Query Mixins */
+@mixin mediaQueryMin($minw) {
+	@media (min-width: $minw) {
+		@content
+	}
+};
+
+@mixin mediaQueryMax($maxw) {
+	@media (max-width: $maxw) {
+		@content
+	}
+};
+
+
 /*-- Class Extends --*/
 
 .hide_label{
@@ -40,7 +60,30 @@
  		display: none;
  	}
 }
+.form_field_lines_width--2col {
+	div[style]{
+		width: 100% !important;
+	}
+}
+.form_field_lines_width--sc {
+	div[style]{
+			width: 500px !important;
+			
+			@include mediaQueryMax(768px){
+				width: 440px !important;
+			}
+		}
+	}
 
+.form_field_lines_width--dropdownsc {
+	div[style]{
+			width: 490px !important;
+			
+			@include mediaQueryMax(768px){
+				width: 440px !important;
+			}
+		}
+	}
 
 /* ---------------------------------------- PAGE Landing */
 
@@ -49,29 +92,53 @@
 	display: none !important;
 }
 
-div[style] {
-	/* Override In-line Style */
-	padding-top: 0 !important;
+.page-id-50 { // Register Page
+	div[style] {
+		/* Override In-line Style */
+		padding-top: 0 !important;
+	}
+}
+
+.page-id-82 { // Register Page
+	div[style] {
+		/* Override In-line Style */
+		padding-top: 0 !important;
+	}
 }
 
 .mcb-section-inner {
 	padding-top: -300px !important;
 }
 
+.radial_logo_flex_container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	
+	@include mediaQueryMax($mq_breakpoint--sm){
+		justify-content: center;
+	}
+}
+
 .land_radial_logo {
+	// margin-left: 78%;
 	margin-top: 20px;
 	width: 200px;
 }
 
-.btn__border--white {
-	background-color: transparent;
-	border: 1px solid white;
-	margin: 0 auto;
-	width: 207px !important;
-	height: 50px;
+.container_btn__border--white {
+	width: 100%;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.btn__border--white {
+	background-color: transparent;
+	height: 50px;
 	float: none !important;
 	
 	p {
@@ -84,9 +151,10 @@ div[style] {
 		color: white;
 		letter-spacing: 5px;
 		font-size: 24px;
+		border: 1px solid white;
+		padding: 5px 20px;
 	}
 }
-
 
 /* ---------------------------------------- PAGE Register */
 /* ---------------------------------------- Form */
@@ -108,10 +176,12 @@ div[style] {
 	
 	.wdform_column {
 		display: grid;
-		width: 500px;
+		// width: 500px;
 		height: 100vh;
+		box-sizing: content-box;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(15, 1fr);
+		grid-row-gap: 5px;
 		grid-template-areas: 
 			"title title"
 			"r1c1 r1c2"
@@ -129,6 +199,11 @@ div[style] {
 			"r12sc r12sc"
 			"submit submit"
 		;
+	
+		@include mediaQueryMin(768px){
+			width: 500px !important;
+		}
+	
 	}
 	
 	select{
@@ -144,6 +219,7 @@ div[style] {
 		grid-area: title;
 		justify-self: center;
 		align-self: center;
+		display: none;
   	}
  
 	.ui-sortable-handle:nth-of-type(2){
@@ -153,44 +229,66 @@ div[style] {
   	}
   
   	.ui-sortable-handle:nth-of-type(3){
+		/* Last Name */
 		grid-area: r1c2;
 		@extend .hide_label;
+		@extend .form_field_lines_width--2col;
   	}
   
 	.ui-sortable-handle:nth-of-type(4){
+		/* E-mail */
 		grid-area: r2sc;
   		@extend .hide_label;
+		@extend .form_field_lines_width--sc;
+		
 	}
 
 	.ui-sortable-handle:nth-of-type(5){
+		/* Phone */
 		grid-area: r3sc;
 		@extend .hide_label;
+		@extend .form_field_lines_width--sc;
   	}
 
 	.ui-sortable-handle:nth-of-type(6){
+		/* Address */
 		grid-area: r4sc;
 		@extend .hide_label;
+		@extend .form_field_lines_width--sc;
   	}
 
 
 	.ui-sortable-handle:nth-of-type(7){
+		/* Apartment */
 		grid-area: r5sc;
 		@extend .hide_label;
+		@extend .form_field_lines_width--sc;
   	}
 
 	.ui-sortable-handle:nth-of-type(8){
+		/* City */
 		grid-area: r6c1;
   		@extend .hide_label;
 	}
 
 	.ui-sortable-handle:nth-of-type(9){
+		/* Postal Code */
 		grid-area: r6c2;
 		@extend .hide_label;
+		@extend .form_field_lines_width--2col;
   	}
 
 	.ui-sortable-handle:nth-of-type(10){
+		/* Country */
 		grid-area: r7sc;
-  	}
+		@extend .hide_label;
+		@extend .form_field_lines_width--dropdownsc;
+		
+		#wdform_26_element1 {
+			/* Drop Down Arrow Proportion */
+			background-size: 4% 32% !important; 
+		}
+	}	
 
 	.ui-sortable-handle:nth-of-type(11){
 		/* Residence Title */
@@ -201,25 +299,56 @@ div[style] {
   	}
 
 	.ui-sortable-handle:nth-of-type(12){
+		/* Residence Type */
 		grid-area: r8sc;
 		@extend .hide_label;
+		@extend .form_field_lines_width--dropdownsc;
+		
+		#wdform_12_element1 {
+			/* Drop Down Arrow Proportion */
+			background-size: 4% 32% !important; 
+		}
   	}
 
 	.ui-sortable-handle:nth-of-type(13){
+		/* Price Range */
 		grid-area: r9sc;
 		@extend .hide_label;
+		@extend .form_field_lines_width--dropdownsc;
+		
+		#wdform_13_element1 {
+			/* Drop Down Arrow Proportion */
+			background-size: 4% 32% !important; 
+		}
   	}
 	
 	.ui-sortable-handle:nth-of-type(14){
+		/* Broker */
 		grid-area: r10sc;
+		margin: 20px 0 15px 0;
   	}
 
 	.ui-sortable-handle:nth-of-type(15){
+		/* How did you hear about us */
 		grid-area: r11sc;
+		@extend .form_field_lines_width--dropdownsc;
+		
+		#wdform_25_element1 {
+			/* Drop Down Arrow Proportion */
+			background-size: 4% 32% !important; 
+		}
   	}
 
 	.ui-sortable-handle:nth-of-type(16){
+		/* Comment Box */
 		grid-area: r12sc;
+		@extend .form_field_lines_width--sc;
+		
+		#wdform_16_element1 {
+			width: 100%;
+			height: 200px;
+			box-sizing: border-box;
+		}
   	}
 	
 	.ui-sortable-handle:nth-of-type(17){
@@ -227,9 +356,17 @@ div[style] {
 		grid-area: submit;
   		justify-self: center;
 		align-self: center;
+		
+		button {
+			margin-right: 0 !important;
+		}
+		
+		.wdform-element-section {
+			min-width: auto;
+		}
+		
 	}
-}
-
+} // #mwd-form1 nest closing tag
 
 .register_logo {
 	/*Society House Wordmark Brown*/
