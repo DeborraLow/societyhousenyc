@@ -1,1 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+
+@font-face {
+	font-family: 'Schnyder';
+	src: url('../../assets/fonts/SchnyderCondS-Light-Web.eot');
+	src: url('../../assets/fonts/SchnyderCondS-Light-Web.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/SchnyderCondS-Light-Web.woff2') format('woff2'),
+		url('../../assets/fonts/SchnyderCondS-Light-Web.woff') format('woff');
+	font-weight:  300;
+	font-style:   normal;
+	font-stretch: normal;
+	/* no ttf */
+}
