@@ -12,6 +12,8 @@
 @import "_config/main.scss";
 @import "_tools/main.scss";
 
+/* Vars */
+
 /* Media Query Vars */
 $mq_breakpoint--xs:	400px;
 $mq_breakpoint--sm:	600px;
@@ -39,6 +41,8 @@ $mq_breakpoint--xl: 1367px;
   }
 }
 
+
+
 /* Media Query Mixins */
 @mixin mediaQueryMin($minw) {
 	@media (min-width: $minw) {
@@ -53,6 +57,31 @@ $mq_breakpoint--xl: 1367px;
 };
 
 
+
+/* Catch all */
+body {
+	h1, h2, h3, h4, h5, h6, p, a {
+		font-family: "Schnyder" !important;
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: normal;
+	}
+	
+	h2 {
+		font-size: 46px;
+		line-height: 60px;
+		letter-spacing: 1.3px;
+		font-weight: 300;
+		
+		@include mediaQueryMax($mq_breakpoint--md){
+			font-size: 30px !important;
+			line-height: 35px;
+			letter-spacing: 1px;
+		}	
+	}
+}
+
+
 /*-- Class Extends --*/
 
 .hide_label{
@@ -60,11 +89,13 @@ $mq_breakpoint--xl: 1367px;
  		display: none;
  	}
 }
+
 .form_field_lines_width--2col {
 	div[style]{
 		width: 100% !important;
 	}
 }
+
 .form_field_lines_width--sc {
 	div[style]{
 			width: 500px !important;
@@ -110,6 +141,12 @@ $mq_breakpoint--xl: 1367px;
 	padding-top: -300px !important;
 }
 
+.wordmark_logo {
+	/*Society House Wordmarks*/
+	margin-bottom: 30px;
+	width: 670px;
+}
+
 .radial_logo_flex_container {
 	width: 100%;
 	height: 100%;
@@ -138,21 +175,28 @@ $mq_breakpoint--xl: 1367px;
 
 .btn__border--white {
 	background-color: transparent;
-	height: 50px;
 	float: none !important;
+	font-family: Schnyder !important;
+	font-size: 46px;
 	
 	p {
 		margin: 0;
+		padding: 0;
 		line-height: normal;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	
 	a {
-		text-decoration: none;
+		text-decoration: none !important;
 		color: white;
+		line-height: 1;
+		padding: 14px 14px 10px 20px;
 		letter-spacing: 5px;
 		font-size: 24px;
-		border: 1px solid white;
-		padding: 5px 20px;
+		font-weight: 100 !important;
+		border: 3px solid white;
 	}
 }
 
@@ -160,6 +204,10 @@ $mq_breakpoint--xl: 1367px;
 /* ---------------------------------------- Form */
 
 #mwd-form1 {
+
+	input[type="text"] {
+		font-family: Schnyder !important;
+	}
 	
 	h3 {
 		/* Form Titles */
@@ -359,6 +407,13 @@ $mq_breakpoint--xl: 1367px;
 		
 		button {
 			margin-right: 0 !important;
+			font-family: Schnyder !important;
+			font-size: 20px !important;
+			text-transform: uppercase;
+			background-color: transparent!important;
+			box-shadow: 0 0 0 0;
+			color: $config-color__brand-primary !important;
+			border-bottom: 1px solid $config-color__brand-primary !important;
 		}
 		
 		.wdform-element-section {
@@ -367,9 +422,3 @@ $mq_breakpoint--xl: 1367px;
 		
 	}
 } // #mwd-form1 nest closing tag
-
-.register_logo {
-	/*Society House Wordmark Brown*/
-	margin-bottom: 30px;
-	width: 670px;
-}

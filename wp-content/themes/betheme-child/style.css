@@ -9,23 +9,51 @@
  Text Domain:  betheme
 */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
+@font-face {
+  font-family: 'Schnyder';
+  src: url("../../assets/fonts/SchnyderCondS-Light-Web.eot");
+  src: url("../../assets/fonts/SchnyderCondS-Light-Web.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/SchnyderCondS-Light-Web.woff2") format("woff2"), url("../../assets/fonts/SchnyderCondS-Light-Web.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  /* no ttf */ }
+
+/* Vars */
 /* Media Query Vars */
 .c-form label {
-  color: #E8560F; }
+  color: #885f5e; }
   @media (min-width: 600px) {
     .c-form label {
       color: #662480; } }
   @media (min-width: 769px) {
     .c-form label {
-      color: #E8560F; } }
+      color: #885f5e; } }
   @media (min-width: 1025px) {
     .c-form label {
       color: #662480; } }
   @media (min-width: 1367px) {
     .c-form label {
-      color: #E8560F; } }
+      color: #885f5e; } }
 
 /* Media Query Mixins */
+/* Catch all */
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body a {
+  font-family: "Schnyder" !important;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal; }
+
+body h2 {
+  font-size: 46px;
+  line-height: 60px;
+  letter-spacing: 1.3px;
+  font-weight: 300; }
+  @media (max-width: 769px) {
+    body h2 {
+      font-size: 30px !important;
+      line-height: 35px;
+      letter-spacing: 1px; } }
+
 /*-- Class Extends --*/
 .hide_label .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(2) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(3) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(4) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(5) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(6) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(7) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(8) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(9) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(10) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(12) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(13) .wdform-label {
   display: none; }
@@ -61,6 +89,11 @@
 .mcb-section-inner {
   padding-top: -300px !important; }
 
+.wordmark_logo {
+  /*Society House Wordmarks*/
+  margin-bottom: 30px;
+  width: 670px; }
+
 .radial_logo_flex_container {
   width: 100%;
   height: 100%;
@@ -84,23 +117,32 @@
 
 .btn__border--white {
   background-color: transparent;
-  height: 50px;
-  float: none !important; }
+  float: none !important;
+  font-family: Schnyder !important;
+  font-size: 46px; }
   .btn__border--white p {
     margin: 0;
-    line-height: normal; }
+    padding: 0;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .btn__border--white a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
+    line-height: 1;
+    padding: 14px 14px 10px 20px;
     letter-spacing: 5px;
     font-size: 24px;
-    border: 1px solid white;
-    padding: 5px 20px; }
+    font-weight: 100 !important;
+    border: 3px solid white; }
 
 /* ---------------------------------------- PAGE Register */
 /* ---------------------------------------- Form */
 #mwd-form1 {
   /* ---------------------------------------- Form Field Layout Grid */ }
+  #mwd-form1 input[type="text"] {
+    font-family: Schnyder !important; }
   #mwd-form1 h3 {
     /* Form Titles */
     color: #885f5e; }
@@ -199,11 +241,13 @@
     justify-self: center;
     align-self: center; }
     #mwd-form1 .ui-sortable-handle:nth-of-type(17) button {
-      margin-right: 0 !important; }
+      margin-right: 0 !important;
+      font-family: Schnyder !important;
+      font-size: 20px !important;
+      text-transform: uppercase;
+      background-color: transparent !important;
+      box-shadow: 0 0 0 0;
+      color: #885f5e !important;
+      border-bottom: 1px solid #885f5e !important; }
     #mwd-form1 .ui-sortable-handle:nth-of-type(17) .wdform-element-section {
       min-width: auto; }
-
-.register_logo {
-  /*Society House Wordmark Brown*/
-  margin-bottom: 30px;
-  width: 670px; }
