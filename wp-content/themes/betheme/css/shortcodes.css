@@ -1119,7 +1119,7 @@ a.icon_bar_dribbble span.b{background:#ec4a89;color:#fff}
 .how_it_works.no-img .image .number{left:50%;margin-left:-18px}
 
 /* Map basic ---------------------------------------------------------------------- */
-.column_map_basic{line-height:0}
+.column_map_basic{line-height:0;text-align:center}
 .column_map_basic iframe{line-height:normal}
 
 /* Map advanced ---------------------------------------------------------------------- */

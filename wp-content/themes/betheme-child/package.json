@@ -4,7 +4,8 @@
   "description": "Use Sass with WordPress, Node Script in SCSS",
   "scripts": {
     "css": "node-sass --output-style --include-path scss scss/main.scss style.css",
-    "watch": "nodemon -e scss -x \"npm run css\""
+    "autoprefixer": "postcss -r style.css",
+    "watch": "nodemon -e scss -x \"npm run css && npm run autoprefixer\""
   },
   "repository": {
     "type": "",
@@ -14,7 +15,9 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "autoprefixer": "^9.1.5",
     "node-sass": "^4.9.3",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "postcss-cli": "^6.0.0"
   }
 }

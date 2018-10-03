@@ -727,17 +727,12 @@ function mfnBuilder(){
 					jQuery(this).closest('.wp-editor-wrap').removeClass('html-active').addClass('tmce-active');
 				});
 
-			} catch( err ){
-
-//				console.log(err);
-
-			}
+			} catch( err ){}
 
 			jQuery( 'html' ).scrollTop( scrTop );
 		}
 
 		// end: Tiny MCE Editor
-
 
 		// Colorpicker ---------------------------------------
 
@@ -761,9 +756,7 @@ function mfnBuilder(){
 
 		// end: Colorpicker ---------------------------------------
 
-
 		popup.fadeIn(300);
-
 
 	});
 
@@ -796,18 +789,14 @@ function mfnBuilder(){
 
 			jQuery( '#mfn-editor' ).val( editorContent );
 
-	    } catch( err ){
+		} catch( err ){}
 
-//		    console.log( err );
+		jQuery( '#mfn-editor' ).removeAttr( 'id' );
 
-	    }
-
-	    jQuery( '#mfn-editor' ).removeAttr( 'id' );
-
-	    // end: Tiny MCE Editor
+		// end: Tiny MCE Editor
 
 
-	    // UI Sortable | destroy
+		// UI Sortable | destroy
 
 		jQuery( '.gallery-container.ui-sortable' ).sortable( 'destroy' );
 		jQuery( '.tabs-ul.ui-sortable' ).sortable( 'destroy' );

@@ -5,6 +5,16 @@ $demos 	= array(
 		'categories'	=> array( 'bus', 'blo', 'por' ),
 		'plugins'			=> array( 'cf7', 'rev' ),
 	),
+	'coffee3' => array(
+		'name'				=> 'Coffee 3',
+		'categories'	=> array( 'bus' ),
+		'plugins'			=> array( 'rev' ),
+	),
+	'school2' => array(
+		'name'				=> 'School 2',
+		'categories'	=> array( 'bus' ),
+		'plugins'			=> array( 'cf7', 'rev' ),
+	),
 	'burger2' => array(
 		'name'				=> 'Burger 2',
 		'categories'	=> array( 'bus' ),
