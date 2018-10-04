@@ -11,11 +11,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
 @font-face {
   font-family: 'Schnyder';
-  src: url("../../assets/fonts/SchnyderCondS-Light-Web.eot");
-  src: url("../../assets/fonts/SchnyderCondS-Light-Web.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/SchnyderCondS-Light-Web.woff2") format("woff2"), url("../../assets/fonts/SchnyderCondS-Light-Web.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
+  src: url("http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/fonts/SchnyderCondS-Light-Web.eot");
+  src: url("http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/fonts/SchnyderCondS-Light-Web.eot?#iefix") format("embedded-opentype"), url("http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/fonts/SchnyderCondS-Light-Web.woff2") format("woff2"), url("http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/fonts/SchnyderCondS-Light-Web.woff") format("woff");
   /* no ttf */ }
 
 /* Vars */
@@ -37,9 +34,9 @@
 
 /* Media Query Mixins */
 /* Catch all */
-body h1, body h2, body h3, body h4, body h5, body h6, body p, body a {
-  font-family: "Schnyder" !important;
-  font-weight: 300;
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body select, body span, body input {
+  font-family: 'Schnyder', Fallback, sans-serif !important;
+  font-weight: 100;
   font-style: normal;
   font-stretch: normal; }
 
@@ -140,9 +137,16 @@ body h2 {
 /* ---------------------------------------- PAGE Register */
 /* ---------------------------------------- Form */
 #mwd-form1 {
+  /*
+	input[type="text"] {
+		font-family: Schnyder !important;
+	}
+	
+	select {
+		font-family: Schnyder !important;
+	}
+*/
   /* ---------------------------------------- Form Field Layout Grid */ }
-  #mwd-form1 input[type="text"] {
-    font-family: Schnyder !important; }
   #mwd-form1 h3 {
     /* Form Titles */
     color: #885f5e; }
