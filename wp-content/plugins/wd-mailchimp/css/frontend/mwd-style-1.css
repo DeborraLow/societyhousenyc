@@ -376,20 +376,6 @@
 	box-shadow:;
 	border:none;
 }
-#mwd-form1 input[type='text']:not(.ui-spinner-input),
-#mwd-form1 input[type=password],
-#mwd-form1 input[type=url],
-#mwd-form1 input[type=email],
-#mwd-form1 textarea,
-#mwd-form1 .ui-spinner,
-#mwd-form1 .ui-slider,
-#mwd-form1 .ui-slider-handle,
-#mwd-form1 select {
-	border-bottom: 1px solid #d8d8d8  !important;
-}
-#mwd-form1 .ui-slider-range {
-	background: #d8d8d8  !important;
-}
 #mwd-form1 select {
 	appearance: none;
 	-moz-appearance: none;
@@ -462,10 +448,10 @@
 	border-bottom: 1px solid #868686  !important;
 }
 #mwd-form1 .button-submit {
-	background-color:#885f5e !important;
+	background-color:transparent !important;
 	font-size:16px !important;
 	font-weight:normal !important;
-	color:#ffffff !important;
+	color:#885f5e !important;
 	height:px !important;
 	width:px !important;
 	margin:0 15px 0 0 !important;
@@ -475,21 +461,12 @@
 	border: none !important;
 	background-image: none !important;
 }
+#mwd-form1 .button-submit {
+	border-bottom: 1px solid #885f5e  !important;
+}
 #mwd-form1 .button-submit:hover {
-	background-color:#701e16 !important;
+	background-color:#885f5e !important;
 	color:#ffffff !important;
-}
-#mwd-form1 .button-submit:hover {
-	border-top: 1px solid #701e16  !important;
-}
-#mwd-form1 .button-submit:hover {
-	border-left: 1px solid #701e16  !important;
-}
-#mwd-form1 .button-submit:hover {
-	border-right: 1px solid #701e16  !important;
-}
-#mwd-form1 .button-submit:hover {
-	border-bottom: 1px solid #701e16  !important;
 }
 #mwd-form1 .button-reset,
 #mwd-form1 button {
@@ -508,24 +485,8 @@
 }
 #mwd-form1 .button-reset:hover,
 #mwd-form1 button:hover {
-	background-color:#5a7784 !important;
+	background-color:#885f5e !important;
 	color:#ffffff !important;
-}
-#mwd-form1 .button-reset:hover,
-#mwd-form1 button:hover {
-	border-top: 1px solid #5a7784  !important;
-}
-#mwd-form1 .button-reset:hover,
-#mwd-form1 button:hover {
-	border-left: 1px solid #5a7784  !important;
-}
-#mwd-form1 .button-reset:hover,
-#mwd-form1 button:hover {
-	border-right: 1px solid #5a7784  !important;
-}
-#mwd-form1 .button-reset:hover,
-#mwd-form1 button:hover {
-	border-bottom: 1px solid #5a7784  !important;
 }
 #mwd-form1 .next-page div.wdform-page-button {
 	background-color:transparent !important;
