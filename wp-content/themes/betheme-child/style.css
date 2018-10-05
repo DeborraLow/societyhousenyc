@@ -12,8 +12,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
 @font-face {
   font-family: 'Schnyder';
-  src: url("http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/fonts/SchnyderCondS-Light-Web.eot");
-  src: url("http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/fonts/SchnyderCondS-Light-Web.eot?#iefix") format("embedded-opentype"), url("http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/fonts/SchnyderCondS-Light-Web.woff2") format("woff2"), url("http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/fonts/SchnyderCondS-Light-Web.woff") format("woff");
+  src: url("assets/fonts/SchnyderCondS-Light-Web.eot");
+  src: url("assets/fonts/SchnyderCondS-Light-Web.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SchnyderCondS-Light-Web.woff2") format("woff2"), url("assets/fonts/SchnyderCondS-Light-Web.woff") format("woff");
   /* no ttf */ }
 
 /* Vars */
@@ -241,7 +241,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
         grid-row-gap: 5px;
             grid-template-areas: "title" "r1c1" "r1c2" "r2sc" "r3sc" "r4sc" "r5sc" "r6c1"  "r6c2" "r7sc" "title2" "r8sc" "r9sc" "r10sc" "r11sc" "r12sc" "submit"; } }
   #mwd-form1 select {
-    background: #FFFFFF url(http://localhost:8888/societyhousenyc/wp-content/themes/betheme-child/assets/icons/down_arrow/group-copy-2.png) no-repeat 96% 50% !important;
+    background: #FFFFFF url(assets/icons/down_arrow/group-copy-2.png) no-repeat 96% 50% !important;
     overflow: hidden; }
   #mwd-form1 .ui-sortable-handle {
     display: flex;
