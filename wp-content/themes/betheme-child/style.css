@@ -75,6 +75,37 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     .radial_logo_flex_container {
       justify-content: center; } }
 
+/* Legal Link Classes and Corrections*/
+.legal_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 100px !important; }
+
+.legal_link {
+  padding-top: 15px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+
+.eModal-1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: white;
+  border-bottom: 1px solid white; }
+
+/* Legal Pop-Up Content */
+.emodal-content {
+  padding: 50px; }
+  .emodal-content p {
+    padding-top: 94px !important; }
+
+/* Modal width overflow fix */
+@media (max-width: 480px) {
+  .emodal.responsive {
+    background-color: red;
+    width: auto !important; } }
+
 /* ---------------------------------------- PAGE Landing */
 #Top_bar {
   /* No Main Menu */
@@ -101,31 +132,9 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
       line-height: 35px;
       letter-spacing: 0; } }
 
-.page-id-50 {
-  /* Legal Link */
-  /* Legal Pop-Up Content */ }
-  .page-id-50 div[style]:nth-of-type(1) {
-    /* Override In-line Style of first DIV */
-    padding-top: 0 !important; }
-  .page-id-50 .legal_wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 100px !important; }
-  .page-id-50 .legal_link {
-    padding-top: 30px;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
-  .page-id-50 .eModal-1 {
-    text-transform: uppercase;
-    font-size: 24px;
-    color: white;
-    border-bottom: 1px solid white; }
-  .page-id-50 .emodal-content {
-    padding: 50px; }
-    .page-id-50 .emodal-content p {
-      padding-top: 94px !important; }
+.page-id-50 div[style]:nth-of-type(1) {
+  /* Override In-line Style of first DIV */
+  padding-top: 0 !important; }
 
 .container_btn__border--white {
   width: 100%;
@@ -164,6 +173,12 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
 .page-id-82 div[style] {
   /* Override In-line Style */
   padding-top: 0 !important; }
+
+.page-id-82 .eModal-1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #885f5e;
+  border-bottom: 1px solid #885f5e; }
 
 .mcb-section-inner {
   padding-top: -300px !important; }
@@ -457,3 +472,5 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
       transition: all 300ms; }
   #mwd-form1 .wdform-element-section {
     min-width: auto; }
+
+/* Register Legal Link */

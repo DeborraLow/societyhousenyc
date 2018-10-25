@@ -125,7 +125,45 @@ body {
 		justify-content: center;
 	}
 }	
+
+/* Legal Link Classes and Corrections*/
+.legal_wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 100px !important;
+}
 	
+.legal_link {
+	padding-top: 15px;
+	transform: rotate(-90deg);
+}
+	
+.eModal-1 {
+	text-transform: uppercase;
+	font-size: 24px;
+	color: white;
+	border-bottom: 1px solid white;
+}
+	
+/* Legal Pop-Up Content */
+.emodal-content {
+	padding: 50px;
+		
+	p {
+		padding-top: 94px !important
+	}
+}
+
+/* Modal width overflow fix */
+@include mediaQueryMax($mq_breakpoint--xs){
+	.emodal.responsive {
+		background-color: red;
+		width: auto !important;
+	} 
+}
+
 
 /* ---------------------------------------- PAGE Landing */
 
@@ -168,37 +206,6 @@ body {
 		/* Override In-line Style of first DIV */
 		padding-top: 0 !important;
 	}
-	
-	/* Legal Link */
-	.legal_wrapper {
-		width: 100%;
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-		padding-top: 100px !important;
-	}
-	
-	.legal_link {
-		padding-top: 30px;
-		transform: rotate(-90deg);
-	}
-	
-	.eModal-1 {
-		text-transform: uppercase;
-		font-size: 24px;
-		color: white;
-		border-bottom: 1px solid white;
-	}
-	
-	/* Legal Pop-Up Content */
-	.emodal-content {
-		padding: 50px;
-		
-		p {
-			padding-top: 94px !important
-		}
-	}
-	
 }
 
 .container_btn__border--white {
@@ -242,13 +249,23 @@ body {
 	}
 }
 
+
 /* ---------------------------------------- PAGE Register */
 
-.page-id-82 { // Register Page
+.page-id-82 { // Register Page unique class
 	div[style] {
 		/* Override In-line Style */
 		padding-top: 0 !important;
 	}
+	
+	.eModal-1 {
+		text-transform: uppercase;
+		font-size: 24px;
+		color: $color_brand--brown;
+		border-bottom: 1px solid $color_brand--brown;
+	}
+	
+	
 }
 
 .mcb-section-inner {
@@ -596,3 +613,6 @@ body {
 			min-width: auto;
 		}
 }// #mwd-form1 nest closing tag
+
+/* Register Legal Link */
+ 
