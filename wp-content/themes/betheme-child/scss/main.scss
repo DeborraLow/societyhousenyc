@@ -78,7 +78,9 @@ body {
 	}
 }
 
-
+#wpadminbar {
+	display: none;
+}
 
 /*-- Class Extends --*/
 
@@ -132,7 +134,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding-top: 100px !important;
+	padding-top: 10% !important;
 }
 	
 .legal_link {
@@ -150,18 +152,39 @@ body {
 /* Legal Pop-Up Content */
 .emodal-content {
 	padding: 50px;
-		
+	text-align: justify;
 	p {
 		padding-top: 94px !important
+	}
+	
+	P:nth-of-type(2){
+		padding-top: 20px !important;
 	}
 }
 
 /* Modal width overflow fix */
-@include mediaQueryMax($mq_breakpoint--xs){
+@include mediaQueryMax($mq_breakpoint_theme--3){
+	
+	#eModal-1[style]{
+		padding: 10px !important;
+	}
+
 	.emodal.responsive {
-		background-color: red;
 		width: auto !important;
+		height: 100vh;
+		padding: 10px;
 	} 
+	
+	.legal_section div:nth-of-type(1) {
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+		
+		a {
+			font-size: 15px;
+		}
+		
+	}
+	
 }
 
 
@@ -253,6 +276,8 @@ body {
 /* ---------------------------------------- PAGE Register */
 
 .page-id-82 { // Register Page unique class
+	// padding-bottom: 100px !important;
+	
 	div[style] {
 		/* Override In-line Style */
 		padding-top: 0 !important;
@@ -292,6 +317,22 @@ body {
 	@include mediaQueryMax(560px){
 		margin-top: 20px !important;
 	}
+}
+
+/* fix width error on ihpone 5 */
+#mwd-form1 .ui-sortable-handle {
+	@include mediaQueryMax(320px){
+		display: inline !important;
+		
+		/* erases table title, was display none, setting display inline makes it appear */
+		h3:nth-of-type(1) {
+			display: none;
+		}
+	} 
+
+
+	
+	
 }
 
 .wdform-field {
