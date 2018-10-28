@@ -245,10 +245,19 @@ footer {
 }
 
 
-.page-id-50 { // Landing page unique class
-	div[style]:nth-of-type(1) {
-		/* Override In-line Style of first DIV */
-		padding-top: 0 !important;
+.custom_section{
+	padding: 0 !important;
+	height: 100vh !important;
+
+	.section_wrapper{
+		height: 100%;
+
+		.legal_wrapper{
+			width: auto !important;
+			position: absolute;
+			left: 20px;
+			bottom: 0;
+		}
 	}
 }
 
