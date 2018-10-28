@@ -43,6 +43,12 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
   font-style: normal;
   font-stretch: normal; }
 
+#wpadminbar {
+  display: none; }
+
+footer {
+  display: none !important; }
+
 /*-- Class Extends --*/
 .hide_label .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(2) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(3) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(4) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(5) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(6) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(7) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(8) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(9) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(10) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(12) .wdform-label, #mwd-form1 .ui-sortable-handle:nth-of-type(13) .wdform-label {
   display: none; }
@@ -59,8 +65,8 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
 /*-- Classes --*/
 .wordmark_logo {
   /*Society House Wordmarks*/
-  margin-bottom: 30px;
-  max-width: 670px !important; }
+  margin-bottom: 20px;
+  max-width: 500px !important; }
 
 .radial_logo_flex_container {
   width: 100%;
@@ -74,6 +80,56 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
   @media (max-width: 600px) {
     .radial_logo_flex_container {
       justify-content: center; } }
+
+/* Legal Link Classes and Corrections*/
+.legal_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 10% !important; }
+
+.legal_link {
+  padding-top: 15px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+  @media (max-width: 320px) {
+    .legal_link {
+      padding-top: 0; } }
+
+.eModal-1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: white;
+  border-bottom: 1px solid white; }
+  .eModal-1:hover {
+    border-bottom: none; }
+  @media (max-width: 320px) {
+    .eModal-1 {
+      font-size: 15px; } }
+
+/* Legal Pop-Up Content */
+.emodal-content {
+  padding: 50px;
+  text-align: justify; }
+  .emodal-content p {
+    padding-top: 94px !important; }
+  .emodal-content P:nth-of-type(2) {
+    padding-top: 20px !important; }
+
+/* Modal width overflow fix */
+@media (max-width: 767px) {
+  #eModal-1[style] {
+    padding: 10px !important; }
+  .emodal.responsive {
+    width: auto !important;
+    height: 100vh;
+    padding: 10px; }
+  .legal_section div:nth-of-type(1) {
+    padding-left: 0 !important;
+    margin-left: 0 !important; }
+    .legal_section div:nth-of-type(1) a {
+      font-size: 15px; } }
 
 /* ---------------------------------------- PAGE Landing */
 #Top_bar {
@@ -100,32 +156,15 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
       font-size: 1.4em !important;
       line-height: 35px;
       letter-spacing: 0; } }
+  @media (max-width: 320px) {
+    .landing_txt_1 h2 {
+      font-size: 1.2em !important;
+      line-height: 20px;
+      letter-spacing: 0; } }
 
-.page-id-50 {
-  /* Legal Link */
-  /* Legal Pop-Up Content */ }
-  .page-id-50 div[style]:nth-of-type(1) {
-    /* Override In-line Style of first DIV */
-    padding-top: 0 !important; }
-  .page-id-50 .legal_wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 100px !important; }
-  .page-id-50 .legal_link {
-    padding-top: 30px;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
-  .page-id-50 .eModal-1 {
-    text-transform: uppercase;
-    font-size: 24px;
-    color: white;
-    border-bottom: 1px solid white; }
-  .page-id-50 .emodal-content {
-    padding: 50px; }
-    .page-id-50 .emodal-content p {
-      padding-top: 94px !important; }
+.page-id-50 div[style]:nth-of-type(1) {
+  /* Override In-line Style of first DIV */
+  padding-top: 0 !important; }
 
 .container_btn__border--white {
   width: 100%;
@@ -156,6 +195,10 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     font-weight: 100 !important;
     border: 3px solid white;
     transition: all 300ms ease; }
+    @media (max-width: 320px) {
+      .btn__border--white a {
+        font-size: 15px;
+        border: 1px solid white; } }
     .btn__border--white a:hover {
       background: rgba(255, 255, 255, 0.9);
       color: #885f5e; }
@@ -165,23 +208,45 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
   /* Override In-line Style */
   padding-top: 0 !important; }
 
+.page-id-82 .eModal-1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #885f5e;
+  border-bottom: 1px solid #885f5e; }
+
 .mcb-section-inner {
   padding-top: -300px !important; }
 
 .register_header h2 span {
   font-size: 36px;
   font-weight: 100;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  /* iPhone Size Fix */ }
+  @media (max-width: 320px) {
+    .register_header h2 span {
+      font-size: 100%; } }
 
 .register_header h4 span {
   font-size: 23px;
   font-weight: 100;
-  letter-spacing: 1.7px; }
+  letter-spacing: 1.7px;
+  /* iPhone Size Fix */ }
+  @media (max-width: 320px) {
+    .register_header h4 span {
+      font-size: 100%; } }
 
 /*-- Form --*/
 @media (max-width: 560px) {
   .wdform_section {
     margin-top: 20px !important; } }
+
+/* fix width error on ihpone 5 */
+@media (max-width: 320px) {
+  #mwd-form1 .ui-sortable-handle {
+    display: inline !important;
+    /* erases table title, was display none, setting display inline makes it appear */ }
+    #mwd-form1 .ui-sortable-handle h3:nth-of-type(1) {
+      display: none; } }
 
 .wdform-field {
   padding-bottom: 0 !important; }
@@ -207,6 +272,9 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     background: none; }
   #mwd-form1 input[type="date"], #mwd-form1 input[type="email"], #mwd-form1 input[type="number"], #mwd-form1 input[type="password"], #mwd-form1 input[type="search"], #mwd-form1 input[type="tel"], #mwd-form1 input[type="text"], #mwd-form1 input[type="url"], #mwd-form1 select, #mwd-form1 textarea, #mwd-form1 .woocommerce .quantity input.qty {
     box-shadow: none; }
+  #mwd-form1 #wdform_18_element1 {
+    /* apartment input width, option cut off fix */
+    min-width: 170px !important; }
   #mwd-form1 h3 {
     /* Form Titles */
     color: #885f5e; }
@@ -215,14 +283,13 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
   #mwd-form1 .wdform_column {
     display: -ms-grid;
     display: grid;
-    height: 100vh;
     box-sizing: content-box;
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        -ms-grid-rows: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
-        grid-template-rows: repeat(15, 1fr);
     grid-row-gap: 5px;
-        grid-template-areas: "title title" "r1c1 r1c2" "r2sc r2sc" "r3sc r3sc" "r4sc r4sc" "r5sc r5sc" "r6c1 r6c2" "r7sc r7sc" "title2 title2" "r8sc r8sc" "r9sc r9sc" "r10sc r10sc" "r11sc r11sc" "r12sc r12sc" "submit submit"; }
+    -ms-grid-rows: auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto;
+        grid-template-areas: "title title" "r1c1 r1c2" "r2sc r2sc" "r3sc r3sc" "r4sc r4sc" "r5sc r5sc" "r6c1 r6c2" "r7sc r7sc" "title2 title2" "r8sc r8sc" "r9sc r9sc" "r10sc r10sc" "r11sc r11sc" "r12sc r12sc" "submit submit";
+    /* Responsive grid */ }
     @media (min-width: 768px) {
       #mwd-form1 .wdform_column {
         width: 500px !important; } }
@@ -236,15 +303,14 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
       #mwd-form1 .wdform_column {
             -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
-            -ms-grid-rows: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
-            grid-template-rows: repeat(17, 1fr);
         grid-row-gap: 5px;
+        -ms-grid-rows: auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto 5px auto;
             grid-template-areas: "title" "r1c1" "r1c2" "r2sc" "r3sc" "r4sc" "r5sc" "r6c1"  "r6c2" "r7sc" "title2" "r8sc" "r9sc" "r10sc" "r11sc" "r12sc" "submit"; } }
   #mwd-form1 select {
     background: #FFFFFF url(assets/icons/down_arrow/group-copy-2.png) no-repeat 96% 50% !important;
     overflow: hidden; }
   #mwd-form1 .ui-sortable-handle {
-    display: flex;
+    display: inline;
     align-items: center; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(1) {
     margin-top: -150px;
@@ -261,10 +327,14 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     /* First Name */
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    grid-area: r1c1; }
+    grid-area: r1c1;
+    margin-right: 15px; }
+    @media (max-width: 559px) {
+      #mwd-form1 .ui-sortable-handle:nth-of-type(2) {
+        margin-right: 0; } }
   #mwd-form1 .ui-sortable-handle:nth-of-type(3) {
     /* Last Name */
-    margin-left: 30px;
+    margin-left: 10px;
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: r1c2; }
@@ -299,10 +369,14 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     /* City */
     -ms-grid-row: 13;
     -ms-grid-column: 1;
-    grid-area: r6c1; }
+    grid-area: r6c1;
+    margin-right: 15px; }
+    @media (max-width: 559px) {
+      #mwd-form1 .ui-sortable-handle:nth-of-type(8) {
+        margin-right: 0; } }
   #mwd-form1 .ui-sortable-handle:nth-of-type(9) {
     /* Postal Code */
-    margin-left: 30px;
+    margin-left: 10px;
     -ms-grid-row: 13;
     -ms-grid-column: 2;
     grid-area: r6c2; }
@@ -315,7 +389,12 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: r7sc;
-    margin-top: 10px; }
+    margin-top: 10px;
+    /* makes field take full width */
+    display: flex !important;
+    /* Fixes Field Width Overflow, compared to other fields*/
+    box-sizing: border-box;
+    padding-right: 11px; }
     #mwd-form1 .ui-sortable-handle:nth-of-type(10) #wdform_25_element1 {
       /* Drop Down Arrow Proportion */
       background-size: 4% 32% !important; }
@@ -337,7 +416,12 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     -ms-grid-row: 19;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
-    grid-area: r8sc; }
+    grid-area: r8sc;
+    /* makes field take full width */
+    display: flex !important;
+    /* Fixes Field Width Overflow, compared to other fields*/
+    box-sizing: border-box;
+    padding-right: 11px; }
     #mwd-form1 .ui-sortable-handle:nth-of-type(12) #wdform_12_element1 {
       /* Drop Down Arrow Proportion */
       background-size: 4% 32% !important; }
@@ -346,7 +430,12 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     -ms-grid-row: 21;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
-    grid-area: r9sc; }
+    grid-area: r9sc;
+    /* makes field take full width */
+    display: flex !important;
+    /* Fixes Field Width Overflow, compared to other fields*/
+    box-sizing: border-box;
+    padding-right: 11px; }
     #mwd-form1 .ui-sortable-handle:nth-of-type(13) #wdform_13_element1 {
       /* Drop Down Arrow Proportion */
       background-size: 4% 32% !important; }
@@ -360,17 +449,22 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     grid-area: r10sc;
     margin: 20px 0 15px 0;
     /* Used to distance "Yes" & "No"  */ }
+    #mwd-form1 .ui-sortable-handle:nth-of-type(14) div:nth-last-of-type(1) {
+      display: flex !important;
+      max-width: auto; }
     #mwd-form1 .ui-sortable-handle:nth-of-type(14) div:nth-of-type(2) div:nth-of-type(2) {
-      margin-left: 40px; }
-      @media (max-width: 480px) {
-        #mwd-form1 .ui-sortable-handle:nth-of-type(14) div:nth-of-type(2) div:nth-of-type(2) {
-          margin-left: 30px; } }
+      margin-left: 30px; }
   #mwd-form1 .ui-sortable-handle:nth-of-type(15) {
     /* How did you hear about us */
     -ms-grid-row: 25;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
-    grid-area: r11sc; }
+    grid-area: r11sc;
+    /* makes field take full width */
+    display: flex !important;
+    /* Fixes Field Width Overflow, compared to other fields*/
+    box-sizing: border-box;
+    padding-right: 11px; }
     #mwd-form1 .ui-sortable-handle:nth-of-type(15) #wdform_26_element1 {
       /* Drop Down Arrow Proportion */
       background-size: 4% 32% !important; }
@@ -380,11 +474,16 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body selec
     -ms-grid-row: 27;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
-    grid-area: r12sc; }
+    grid-area: r12sc;
+    /* makes field take full width */
+    display: flex !important; }
     #mwd-form1 .ui-sortable-handle:nth-of-type(16) #wdform_16_element1 {
       width: 100% !important;
       height: 200px;
       box-sizing: border-box; }
+      @media (max-width: 480px) {
+        #mwd-form1 .ui-sortable-handle:nth-of-type(16) #wdform_16_element1 {
+          height: 100px; } }
   #mwd-form1 .ui-sortable-handle:nth-of-type(17) {
     /* Submit Button */
     -ms-grid-row: 29;
