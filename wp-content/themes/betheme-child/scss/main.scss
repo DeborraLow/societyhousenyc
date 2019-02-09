@@ -217,6 +217,7 @@ footer {
 		line-height: 60px;
 		letter-spacing: 1.3px;
 		font-weight: 300;
+		font-family: 'Schnyder', Fallback, sans-serif !important;
 		
 		@include mediaQueryMax($mq_breakpoint_theme--2){
 			font-size: 30px !important;
