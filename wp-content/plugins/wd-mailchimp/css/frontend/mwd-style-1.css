@@ -39,11 +39,11 @@
 }
 #mwd-form1 .mwd-header-title{
 	font-size:24px;
-	color:#885f5e;
+	color:#a02720;
 }
 #mwd-form1 .mwd-header-description{
 	font-size:15px;
-	color:#885f5e;
+	color:#a02720;
 }
 .mwd-form-message1{
 	font-family:segoe ui;
@@ -58,7 +58,7 @@
 }
 .mwd-success.mwd-form-message1{
 	background-color:#ffffff;
-	color:#8d6e6d;
+	color:#a02720;
 }
 #mwd-minimize-text1{
 	width:30%;
@@ -110,7 +110,7 @@
 	font-size:16px;
 	font-weight:normal;
 	width:100%;
-	color:#8d6e6d;
+	color:#a02720;
 	padding:10px;
 	margin:;
 	border-radius:0px;
@@ -123,7 +123,7 @@
 #mwd-form1 .mini_label {
 	font-size:14px !important;
 	font-weight:normal;
-	color:#8d6e6d;
+	color:#a02720;
 	padding:0px 5px 0px 0px !important;
 	margin:0px;
 }
@@ -168,7 +168,7 @@
 #mwd-form1 .wdform_footer {
 	font-size: 16px;
 	font-weight: normal;
-	color: #8d6e6d;
+	color: #a02720;
 	width: 70%;
 	margin: 0 auto;
 	padding: 15px 0 0 0;
@@ -312,7 +312,7 @@
 }
 
 #mwd-form1 .input_deactive {
-	color: #885f5e !important;
+	color: #a02720 !important;
 	font-style: normal;
 }
 
@@ -369,7 +369,7 @@
 	height:26px;
 	line-height:26px;
 	background-color:#ffffff;
-	color:#885f5e;
+	color:#a02720;
 	padding:0px 5px;
 	margin:0px;
 	border-radius:0px !important;
@@ -451,7 +451,7 @@
 	background-color:transparent !important;
 	font-size:16px !important;
 	font-weight:normal !important;
-	color:#885f5e !important;
+	color:#a02720 !important;
 	height:px !important;
 	width:px !important;
 	margin:0 15px 0 0 !important;
@@ -462,15 +462,15 @@
 	background-image: none !important;
 }
 #mwd-form1 .button-submit {
-	border-bottom: 1px solid #885f5e  !important;
+	border-bottom: 1px solid #a02720  !important;
 }
 #mwd-form1 .button-submit:hover {
-	background-color:#885f5e !important;
+	background-color:#a02720 !important;
 	color:#ffffff !important;
 }
 #mwd-form1 .button-reset,
 #mwd-form1 button {
-	background-color:#885f5e !important;
+	background-color:#a02720 !important;
 	font-size:16px !important;
 	font-weight:normal !important;
 	color:#ffffff !important;
@@ -485,7 +485,7 @@
 }
 #mwd-form1 .button-reset:hover,
 #mwd-form1 button:hover {
-	background-color:#885f5e !important;
+	background-color:#a02720 !important;
 	color:#ffffff !important;
 }
 #mwd-form1 .next-page div.wdform-page-button {

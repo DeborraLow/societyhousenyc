@@ -14,6 +14,7 @@
 
 /* Vars */
 $color_brand--brown: #885f5e;
+$color_brand--red: #a02720;
 
 /* Media Query Vars */
 $mq_breakpoint--xs:			480px;
@@ -68,7 +69,7 @@ $mq_breakpoint_theme--3: 	767px;
 
 
 /* Catch all */
-
+html[style]{ margin-top: 0 !important; padding: 0;}
 body {
 	h1, h2, h3, h4, h5, h6, p, a, select, span, input {
 		font-family: 'Schnyder', Fallback, sans-serif !important;
@@ -119,7 +120,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	
 	img {
@@ -205,6 +206,27 @@ footer {
 
 /* ---------------------------------------- PAGE Landing */
 
+.landing_section, html { background-color: $color_brand--red !important;}
+
+.landing_section { 
+
+	.one.column { width: auto;}
+
+	.radial_logo_flex_container { 
+		margin: 0;
+		width: 100% !important;
+		img { max-width: 390px; 
+			@include mediaQueryMin(768px){ width: 250px; }
+			@include mediaQueryMin(1280px){ width: 340px; }
+		}
+	}
+
+	.landing-register-btn .column { margin: 0 0 15px 0 !important;}
+	
+}
+
+
+
 #Top_bar {
 	/* No Main Menu */
 	display: none !important;
@@ -245,6 +267,41 @@ footer {
 	}
 }
 
+.register_txt_1 {
+
+	h2 {
+		font-size: 34px;
+		line-height: normal;
+		letter-spacing: 1.3px;
+		font-weight: 300;
+		font-family: 'Schnyder', Fallback, sans-serif !important;
+		color: $color_brand--red;
+		
+		@include mediaQueryMax($mq_breakpoint_theme--2){
+			font-size: 30px !important;
+			line-height: 35px;
+			letter-spacing: 1px;
+		}
+		
+		@include mediaQueryMax($mq_breakpoint_theme--3){
+			font-size: 1.5em !important;
+			line-height: 35px;
+			letter-spacing: 1px;
+		}
+		
+		@include mediaQueryMax(427px){
+			font-size: 1.4em !important;
+			line-height: 35px;
+			letter-spacing: 0;
+		}
+		
+		@include mediaQueryMax(320px){
+			font-size: 1.2em !important;
+			line-height: 20px;
+			letter-spacing: 0;
+		}
+	}
+}
 
 .custom_section{
 	padding: 0 !important;
@@ -252,6 +309,9 @@ footer {
 
 	.section_wrapper{
 		height: 100%;
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 		.legal_wrapper{
 			width: auto !important;
@@ -293,7 +353,7 @@ footer {
 		letter-spacing: 5px;
 		font-size: 24px;
 		font-weight: 100 !important;
-		border: 3px solid white;
+		border: 1px solid white;
 		transition: all 300ms ease;
 		
 		@include mediaQueryMax(320px){
@@ -303,10 +363,46 @@ footer {
 		
 		&:hover {
 			background:rgba(255,255,255, 0.9);
-			color: $color_brand--brown;
+			color: $color_brand--red;
 		}
 	}
 }
+
+.radial_logo {
+	margin-top: 20px;
+	width: 200px;
+}
+
+.new_legal {
+text-align: center;
+}
+
+.new_legal h6 {
+font-family: Arial, Helvetica, sans-serif !important;
+font-size: 8px;
+}
+
+#new_legal_wrapper {
+padding-top: 33px !important;
+}
+
+.wrapper_legal2 { display: flex; align-items: center; justify-content: center;}
+.page-id-50.one.column {width: auto !important}
+.wrapper_legal2 .column {margin: 0 auto; padding-top: 50px;
+	@include mediaQueryMax(414px){ padding-top: 20px; }
+}
+.container_legal2 { width: auto;}
+.container_legal2 p { 
+	font-family: sans-serif !important; 
+	margin: 0; padding: 0 0 15px 0; font-size: 10px; line-height: normal; max-width: 700px; color: white;
+	@include mediaQueryMax(320px){ font-size: 9px; }
+}
+
+
+
+
+
+
 
 
 /* ---------------------------------------- PAGE Register */
@@ -314,6 +410,12 @@ footer {
 .page-id-82 { // Register Page unique class
 	// padding-bottom: 100px !important;
 	
+	h6, h5, h4, h3, h2, h1 { color: $color_brand--red; }
+
+	.radial_logo_flex_container {justify-content: center; margin: 0;}
+
+	.red_wordmark_wrap .column { margin: 0;}
+
 	div[style] {
 		/* Override In-line Style */
 		padding-top: 0 !important;
@@ -322,8 +424,8 @@ footer {
 	.eModal-1 {
 		text-transform: uppercase;
 		font-size: 24px;
-		color: $color_brand--brown;
-		border-bottom: 1px solid $color_brand--brown;
+		color: $color_brand--red;
+		border-bottom: 1px solid $color_brand--red;
 	}
 	
 	
@@ -358,6 +460,7 @@ footer {
 /*-- Form --*/
 
 .wdform_section {
+	margin-top: 50px !important; 
 	@include mediaQueryMax(560px){
 		margin-top: 20px !important;
 	}
@@ -415,7 +518,7 @@ footer {
 	
 	h3 {
 		/* Form Titles */
-		color: #885f5e;
+		color: $color_brand--red;
 	}
 	
 	.wdform-required {
