@@ -89,8 +89,8 @@ footer {
 .legal_wrapper {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding-top: 10% !important; }
 
 .legal_link {
@@ -291,7 +291,7 @@ footer {
 
 .wrapper_legal2 .column {
   margin: 0 auto;
-  padding-top: 50px; }
+  padding-top: 20px; }
   @media (max-width: 414px) {
     .wrapper_legal2 .column {
       padding-top: 20px; } }
@@ -312,7 +312,7 @@ footer {
       font-size: 9px; } }
 
 /* ---------------------------------------- PAGE Register */
-.page-id-82 h6, .page-id-82 h5, .page-id-82 h4, .page-id-82 h3, .page-id-82 h2, .page-id-82 h1 {
+.page-id-82 h6, .page-id-82 h5, .page-id-82 h4, .page-id-82 h3, .page-id-82 h2, .page-id-82 h1, .page-id-82 p {
   color: #a02720; }
 
 .page-id-82 .radial_logo_flex_container {
@@ -331,6 +331,15 @@ footer {
   font-size: 24px;
   color: #a02720;
   border-bottom: 1px solid #a02720; }
+
+.register-artwork img {
+  max-width: 550px !important; }
+
+.registration_title {
+  margin-top: 100px; }
+
+.registration_title h2, .registration_title h3 {
+  letter-spacing: 2.7px !important; }
 
 .mcb-section-inner {
   padding-top: -300px !important; }
@@ -352,6 +361,12 @@ footer {
   @media (max-width: 320px) {
     .register_header h4 span {
       font-size: 100%; } }
+
+.legal_register p {
+  color: #a7a7a7; }
+
+.sothebys_txt h3 {
+  color: #a7a7a7 !important; }
 
 /*-- Form --*/
 .wdform_section {

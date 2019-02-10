@@ -137,8 +137,8 @@ footer {
 .legal_wrapper {
 	width: 100%;
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
 	padding-top: 10% !important;
 }
 	
@@ -388,7 +388,7 @@ padding-top: 33px !important;
 
 .wrapper_legal2 { display: flex; align-items: center; justify-content: center;}
 .page-id-50.one.column {width: auto !important}
-.wrapper_legal2 .column {margin: 0 auto; padding-top: 50px;
+.wrapper_legal2 .column {margin: 0 auto; padding-top: 20px;
 	@include mediaQueryMax(414px){ padding-top: 20px; }
 }
 .container_legal2 { width: auto;}
@@ -410,7 +410,7 @@ padding-top: 33px !important;
 .page-id-82 { // Register Page unique class
 	// padding-bottom: 100px !important;
 	
-	h6, h5, h4, h3, h2, h1 { color: $color_brand--red; }
+	h6, h5, h4, h3, h2, h1, p { color: $color_brand--red; }
 
 	.radial_logo_flex_container {justify-content: center; margin: 0;}
 
@@ -429,6 +429,13 @@ padding-top: 33px !important;
 	}
 	
 	
+}
+
+.register-artwork img { max-width: 550px !important;}
+
+.registration_title { margin-top: 100px; }
+.registration_title h2, .registration_title h3 { 
+	letter-spacing: 2.7px !important;	
 }
 
 .mcb-section-inner {
@@ -455,7 +462,8 @@ padding-top: 33px !important;
 	}
 }
 
-
+.legal_register p {color: #a7a7a7;}
+.sothebys_txt h3 {color: #a7a7a7 !important;}
 
 /*-- Form --*/
 
