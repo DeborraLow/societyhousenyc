@@ -4,7 +4,7 @@
  Description:  Betheme Child Theme
  Author:       Regulo Leonardi
  Template:     betheme
- Version:      1.0.1
+ Version:      1.0.2
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  betheme
@@ -129,11 +129,8 @@ footer {
     width: auto !important;
     height: 100vh;
     padding: 10px; }
-  .legal_section div:nth-of-type(1) {
-    padding-left: 0 !important;
-    margin-left: 0 !important; }
-    .legal_section div:nth-of-type(1) a {
-      font-size: 15px; } }
+  .legal_section div:nth-of-type(1) a {
+    font-size: 15px; } }
 
 /* ---------------------------------------- PAGE Landing */
 .landing_section, html {
@@ -334,6 +331,9 @@ footer {
 
 .register-artwork img {
   max-width: 550px !important; }
+  @media (max-width: 767px) {
+    .register-artwork img {
+      max-width: 100% !important; } }
 
 .registration_title {
   margin-top: 100px; }
@@ -691,3 +691,13 @@ footer {
       transition: all 300ms; }
   #mwd-form1 .wdform-element-section {
     min-width: auto; }
+
+/* IE Fix */
+.mwd-form .wdform-field {
+  display: initial !important; }
+
+#mwd-form1 .ui-sortable-handle {
+  display: block !important; }
+
+#mwd-form1 h3 {
+  display: none; }
